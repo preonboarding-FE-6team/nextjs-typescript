@@ -17,7 +17,17 @@
     "noImplicitAny": true, // 암묵적 any 금지
     "jsx": "preserve", // jsx 지원
     "sourceMap": true, // 디버깅시 원본 TypeScript 코드를 보여줌
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@recoil/*": ["src/recoil/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
